@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+	<style>
+	body {
+        background-color: #F3EBF6;
+        font-family: 'Ubuntu', sans-serif;
+    }
+		form{
+			padding-top: 40px;
+			background-color: #FFFFFF;
+        width: 550px;
+        height: 550px;
+        margin: 7em auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+		}
+		.input{
+		width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 62px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+		}
+	.input:focus {
+        border: 2px solid rgba(0, 0, 0, 0.18) !important;
+	
+	}
+	.button{
+	 cursor: pointer;
+        border-radius: 5em;
+        color: #fff;
+        background-color: #7477ae;
+        border: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 38%;
+        font-size: 13px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+	}
+	.member{
+		margin-left: 34%;
+	}
+	
+	</style>
+</head>
+<body>
+	<form method="GET" action="sayfa.php">	
+		<input type="text" name="userName" class="input" placeholder="Username" required><br><br>
+		<input type="password" name="password" class="input" placeholder="Password"  required><br><br>
+		<input type="number" name="ogrenciNo" class="input" placeholder="Student ID"  required><br><br>
+		<input type="number" name="ipadres" class="input" placeholder="IP Address" required><br><br>
+		<input type="text" name="eposta" class="input" placeholder="E-mail" required><br><br>
+	 <input type="submit" name="uyeoll" value="Register" class="button">
+	 <p class="member"> Already a member? <a href="form.html">Sign In</a></p>
+	
+	</form>
+</body>
+</html>
